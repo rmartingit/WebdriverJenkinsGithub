@@ -31,7 +31,6 @@ public class TeamMainPageTest {
         baseUrl = String.valueOf(System.getProperty("baseURL"));
     }
 
-
     @Test
     public void testRMTeamMemberLink() throws Exception {
         driver.get(baseUrl);
