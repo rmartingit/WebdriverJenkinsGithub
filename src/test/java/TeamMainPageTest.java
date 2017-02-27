@@ -16,7 +16,6 @@ import static org.junit.Assert.assertTrue;
 
 public class TeamMainPageTest {
     private static final String LINKTEXT_JCB = "LinkedIn";
-    private static final String JCB_LINK_TITLE= "José Carlos Bregieiro Ribeiro | LinkedIn";
     private static final String LINKTEXT_RM = "shortbio";
 
     //PAGES
@@ -32,17 +31,6 @@ public class TeamMainPageTest {
         baseUrl = String.valueOf(System.getProperty("baseURL"));
     }
 
-
-    @Test
-    public void testJCBTeamMemberLink() throws Exception {
-        driver.get(baseUrl+URL_MAINPAGE);
-        WebElement linkJCB =  (new WebDriverWait(driver, 10)).until(
-                ExpectedConditions.presenceOfElementLocated(By.linkText(LINKTEXT_JCB)));
-        linkJCB.click();
-
-        assertTrue("expected: " + JCB_LINK_TITLE + ", found: " + driver.getTitle(), driver.getTitle().equals(JCB_LINK_TITLE));
-
-    }
 
     @Test
     public void testRMTeamMemberLink() throws Exception {
