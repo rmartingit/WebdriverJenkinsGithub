@@ -15,11 +15,10 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
 public class TeamMainPageTest {
-    private static final String LINKTEXT_JCB = "LinkedIn";
     private static final String LINKTEXT_RM = "shortbio";
 
     //PAGES
-    private static final String URL_MAINPAGE = "/index.html";
+    //private static final String URL_MAINPAGE = "http://localhost:8080/tests/index.html";
 
     private WebDriver driver;
     private String baseUrl;
@@ -28,12 +27,13 @@ public class TeamMainPageTest {
     public void setUp() throws Exception {
         Logger.getLogger("").setLevel(Level.OFF);
         driver = new HtmlUnitDriver();
-        baseUrl = String.valueOf(System.getProperty("baseURL"));
+        if((baseUrl = String.valueOf(System.getProperty("baseURL")))==null);
+            baseUrl = "http://localhost:8080/tests";
     }
 
     @Test
     public void testRMTeamMemberLink() throws Exception {
-        driver.get(baseUrl);
+        driver.get(baseUrl + "/index.html");
         WebElement linkRM =  (new WebDriverWait(driver, 10)).until(
                 ExpectedConditions.presenceOfElementLocated(By.linkText(LINKTEXT_RM)));
         linkRM.click();
