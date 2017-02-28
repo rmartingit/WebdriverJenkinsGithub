@@ -28,6 +28,8 @@ public class TeamMainPageTest {
         driver = new HtmlUnitDriver();
         if((baseUrl = String.valueOf(System.getProperty("baseUrl")))==null);
             baseUrl = "http://localhost:8080/tests";
+
+        System.out.println("Base URL is: " + baseUrl);
     }
 
     @Test
