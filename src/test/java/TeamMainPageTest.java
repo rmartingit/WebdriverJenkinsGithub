@@ -26,7 +26,7 @@ public class TeamMainPageTest {
     public void setUp() throws Exception {
         Logger.getLogger("").setLevel(Level.OFF);
         driver = new HtmlUnitDriver();
-        if((baseUrl = String.valueOf(System.getProperty("baseURL")))==null);
+        if((baseUrl = String.valueOf(System.getProperty("baseUrl")))==null);
             baseUrl = "http://localhost:8080/tests";
     }
 
