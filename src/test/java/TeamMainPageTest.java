@@ -12,6 +12,8 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertSame;
+import static org.junit.Assert.assertTrue;
 
 public class TeamMainPageTest {
     private static final String LINKTEXT_RM = "shortbio";
@@ -30,6 +32,15 @@ public class TeamMainPageTest {
             baseUrl = "http://localhost:8080/tests";
 
         System.out.println("Base URL is: " + baseUrl);
+    }
+
+    @Test
+    public void testIndexTitle() throws Exception {
+        driver.get(baseUrl + "/index.html");
+
+
+        assertTrue(driver.getTitle().equals("DRT@CI&D team main page"));
+
     }
 
     @Test
