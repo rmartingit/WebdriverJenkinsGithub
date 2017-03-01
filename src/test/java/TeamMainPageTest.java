@@ -17,7 +17,7 @@ import static org.junit.Assert.assertTrue;
 
 public class TeamMainPageTest {
     private static final String LINKTEXT_RM = "shortbio";
-    
+
     private WebDriver driver;
     private String baseUrl;
 
@@ -26,7 +26,7 @@ public class TeamMainPageTest {
         Logger.getLogger("").setLevel(Level.OFF);
         driver = new HtmlUnitDriver();
         baseUrl = String.valueOf(System.getProperty("baseUrl"));
-        if(baseUrl==null);
+        if(baseUrl==null)
             baseUrl = "http://localhost:8080/tests";
 
         System.out.println("Base URL is: " + baseUrl);
