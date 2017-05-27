@@ -16,7 +16,7 @@ import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
 
 public class TeamMainPageTest {
-    private static final String LINKTEXT_RM = "shortbio";
+    private static final String LINKTEXT_RM = "Ricardo Martinho";
 
     private WebDriver driver;
     private String baseUrl;
@@ -37,12 +37,12 @@ public class TeamMainPageTest {
         driver.get(baseUrl + "/index.html");
 
 
-        assertTrue(driver.getTitle().equals("Team main page"));
+        assertTrue(driver.getTitle().equals("Team's main page"));
 
     }
 
     @Test
-    public void testRMTeamMemberLink() throws Exception {
+    public void testRMTeamMember() throws Exception {
         driver.get(baseUrl + "/index.html");
         WebElement linkRM =  (new WebDriverWait(driver, 10)).until(
                 ExpectedConditions.presenceOfElementLocated(By.linkText(LINKTEXT_RM)));
