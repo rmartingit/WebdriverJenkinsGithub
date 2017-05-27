@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eaf94d27-f91a-46de-8194-afc10ad8d000" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebdriverJenkinsGithub.iml" afterPath="$PROJECT_DIR$/WebdriverJenkinsGithub.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/index.html" afterPath="$PROJECT_DIR$/src/main/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/TeamMainPageTest.java" afterPath="$PROJECT_DIR$/src/test/java/TeamMainPageTest.java" />
-    </list>
+    <list default="true" id="eaf94d27-f91a-46de-8194-afc10ad8d000" name="Default" comment="" />
     <ignored path="WebdriverJenkinsGithub.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/target/" />
