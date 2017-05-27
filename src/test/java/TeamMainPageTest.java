@@ -34,10 +34,10 @@ public class TeamMainPageTest {
 
     @Test
     public void testIndexTitle() throws Exception {
-        driver.get(baseUrl + "/index.html");
+        driver.get(baseUrl + "index.html");
 
 
-        assertTrue(driver.getTitle().equals("Team's main page"));
+        assertTrue(driver.getTitle().equals("Team\'s main page"));
 
     }
 
