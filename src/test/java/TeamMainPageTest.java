@@ -37,7 +37,7 @@ public class TeamMainPageTest {
         driver.get(baseUrl + "/index.html");
 
 
-        assertTrue(driver.getTitle().equals("DRT@CI&D team main page"));
+        assertTrue(driver.getTitle().equals("Team main page"));
 
     }
 
