@@ -19,7 +19,6 @@ public class TeamMainPageTest {
 
     private WebDriver driver;
     private String baseUrl;
-    
 
     @Before
     public void setUp() throws Exception {
