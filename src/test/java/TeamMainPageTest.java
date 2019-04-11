@@ -27,6 +27,7 @@ public class TeamMainPageTest {
         baseUrl = String.valueOf(System.getProperty("baseUrl"));
         if(baseUrl==null)
             baseUrl = "http://35.241.187.101/";
+        
 
         System.out.println("Base URL is: " + baseUrl);
     }
